@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+    <style>
+        .cap{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border: 1px ;
+            width: 700px;
+           margin:auto;
+        }
+      
+        .cap form table{          
+            margin: 1px;            
+        }
+        h3{
+            color: green;
+        }
+        table{
+            background:  #66FF99;
+            width: 680px;
+            color: green;
+        }
+        .submit{
+            text-align: center;
+        }
+        .notification{
+            text-align: center;
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="cap">
+        <h3>Phiếu đăng ký tham gia chương trình khuyến mãi</h3>
+        <form action="">
+            <table border="1px" cellpadding =10px cellspacing =0>
+                <tr>
+                    <td width =192px>
+                        Họ và tên
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Địa chỉ
+                    </td>
+                    <td>
+                        <input type="text" name="adress" id="adress"size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Điện thoại
+                    </td>
+                    <td>
+                        <input type="tel" name="mobile" id="mobile" size="50">
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>
+                        Phái
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Nam</label>
+                        <input type="radio" name="gender" id="female" >
+                        <label for="female">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nghề nghiệp
+                    </td>
+                    <td>
+                        <select name="job" id="job">
+                            <option value="doctor">Bác sĩ</option>
+                            <option value="engineer">Kỹ sư</option>
+                            <option value="teacher">Giáo viên</option>
+                            <option value="different">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Chọn sản phẩm tham gia
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Số người dự đoán tham gia
+                    </td>
+                    <td>
+                        <input type="number" name="quatity" id="quatity">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit">
+                        <button>Đồng ý</button>
+                    </td>
+                </tr> 
+                <tr> 
+                    <td colspan="2" class="notification">Bạn đã đăng ký thành công!!!!</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
