@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../Css/layout.css">
+    <link rel="stylesheet" href="../Css/news.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+</head>
+<body>
+    
+
+    <header class="header">
+        <nav class="menu d-flex justify-between">
+            <div class="menu-left w-15">
+                <img class="w-100" src="http://acatea.vn/Content/images/acatea-green.svg" alt="logo">
+            </div>
+            <div class="menu-right w-50">
+                <div class="icon-mobile d-des-none d-mb-block">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </div>
+                <ul class="list-item d-flex justify-between d-des-block d-mb-none">
+                    <li class="item">
+                        <a class="item-link" href="#">TRANG CHỦ</a>
+                    </li>
+                    <li class="item">
+                        <a class="item-link" href="#">Sản phẩm</a>
+                    </li>
+                    <li class="item">
+                        <a class="item-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="item active">
+                        <a class="item-link" href="#">Tin tức</a>
+                    </li>
+                    <li class="item">
+                        <a class="item-link" href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="news-page">
+        <div class="news-page-title">
+            <h2 class="text-center">TIN TỨC</h2>
+        </div>
+        <div class="">
+           <form class="form-search">
+                <input type="text" name="search" id="search" placeholder="Mời bạn nhập...">
+                <button type="button" onclick="searchItem()">Search</button>
+           </form>
+        </div>
+        <div class="news-page-content" >
+            <div class="row  d-flex justify-between list-news">
+                
+            </div>
+        </div>
+        <div class="news-page-number" onclick="changePageNumber(1)">
+            <ul>
+                <li ></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="news-page-content">
+            <div class="list-news"></div>
+          </div>
+          
+         
+          <div class="pagination-container">
+           
+            <button class="page-btn prev-page">Trang trước</button>
+          
+           
+            <button class="page-btn next-page">Trang sau</button>
+          </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="../JS/news.js"></script>
+</body>
+</html>
